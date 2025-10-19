@@ -2,7 +2,7 @@
 site_name: Prompt Engineering Lab Journal
 site_author: Amal N K
 
-site_url: https://Amal-nellanhi.github.io/prompt-engineering-journal/
+# site_url: https://Amal-nellanhi.github.io/prompt-engineering-journal/
 use_directory_urls: false
 
 markdown_extensions:
