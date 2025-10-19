@@ -1,0 +1,1583 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Amal N K">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../project-2/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>P1: Instruction Prompts - Prompt Engineering Lab Journal</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-1-instruction-prompts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Prompt Engineering Lab Journal" class="md-header__button md-logo" aria-label="Prompt Engineering Lab Journal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prompt Engineering Lab Journal
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P1: Instruction Prompts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Prompt Engineering Lab Journal" class="md-nav__button md-logo" aria-label="Prompt Engineering Lab Journal" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Prompt Engineering Lab Journal
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Objective & Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    P1: Instruction Prompts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    P1: Instruction Prompts
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-type-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Type &amp; Goal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experiment Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#models-and-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models and Versions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-or-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset or Tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypothesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypothesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Versions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prompt Versions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v1-minimal-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V1 (Minimal Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v2-basic-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V2 (Basic Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v3-detailed-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V3 (Detailed Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Versions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Versions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v1-outputs-minimal-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V1 Outputs (Minimal Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v2-outputs-basic-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V2 Outputs (Basic Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v3-outputs-detailed-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V3 Outputs (Detailed Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scoring-rubric-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scoring Rubric (1–5)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results &amp; Insights
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Results &amp; Insights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-by-prompt-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Performance by Prompt Version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Key Findings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-worked" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ What Worked
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-didnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ What Didn't Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unexpected-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Unexpected Findings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-iteration-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Next Iteration Ideas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Key Takeaways
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎓 Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P2: Role-based Prompts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P3: Zero-shot vs Few-shot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P4: Chain-of-Thought Prompts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P5: Context Length & Clarity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P6: Tone & Persona Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P7: Creative Task Prompts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P8: Comparative Prompt Evaluation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P9: Text to Image Techniques
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evaluation-criteria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evaluation Criteria
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-type-goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Type &amp; Goal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experiment Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#models-and-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models and Versions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-or-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset or Tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypothesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypothesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompt Versions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prompt Versions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v1-minimal-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V1 (Minimal Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v2-basic-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V2 (Basic Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v3-detailed-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V3 (Detailed Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Versions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Versions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v1-outputs-minimal-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V1 Outputs (Minimal Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v2-outputs-basic-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V2 Outputs (Basic Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v3-outputs-detailed-instruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      V3 Outputs (Detailed Instruction)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scoring-rubric-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scoring Rubric (1–5)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results &amp; Insights
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Results &amp; Insights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-by-prompt-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Performance by Prompt Version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Key Findings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-worked" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ What Worked
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-didnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ What Didn't Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unexpected-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Unexpected Findings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-iteration-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Next Iteration Ideas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Key Takeaways
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎓 Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="project-1-instruction-prompts">Project 1 – Instruction Prompts<a class="headerlink" href="#project-1-instruction-prompts" title="Permanent link">&para;</a></h1>
+<h3 id="prompt-type-goal">Prompt Type &amp; Goal<a class="headerlink" href="#prompt-type-goal" title="Permanent link">&para;</a></h3>
+<p>Testing <strong>specificity levels</strong> in direct instruction prompts—comparing how vague, basic, and detailed instructions affect the quality, accuracy, and creativity of AI-generated outputs.</p>
+<hr />
+<h2 id="experiment-setup">Experiment Setup<a class="headerlink" href="#experiment-setup" title="Permanent link">&para;</a></h2>
+<h3 id="models-and-versions">Models and Versions<a class="headerlink" href="#models-and-versions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Claude Sonnet 4.5</li>
+<li>ChatGPT (GPT-4 or GPT-4o)</li>
+<li>Google Gemini (2.5 Flash)</li>
+<li>Perplexity AI</li>
+</ul>
+<h3 id="dataset-or-tasks">Dataset or Tasks<a class="headerlink" href="#dataset-or-tasks" title="Permanent link">&para;</a></h3>
+<p><strong>Task:</strong> Write a product description for a fictional <strong>"FitPulse Pro" smartwatch</strong></p>
+<p><strong>Product details:</strong>
+-   Heart rate monitoring with real-time tracking
+-   Built-in GPS for route mapping
+-   7-day battery life
+-   Water-resistant design
+-   Target audience: Health-conscious professionals aged 25-40</p>
+<h3 id="hypothesis">Hypothesis<a class="headerlink" href="#hypothesis" title="Permanent link">&para;</a></h3>
+<p>More specific instructions will produce higher scores in Structure and Accuracy across all models, but may reduce Creativity scores due to constraints. Different AI models may respond differently to the same level of specificity.</p>
+<h3 id="control-variables">Control Variables<a class="headerlink" href="#control-variables" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Same product features and audience across all tests</li>
+<li>Same prompt wording for each version across all models</li>
+<li>Same evaluation criteria and scoring rubric</li>
+</ul>
+<hr />
+<h2 id="prompt-versions">Prompt Versions<a class="headerlink" href="#prompt-versions" title="Permanent link">&para;</a></h2>
+<h3 id="v1-minimal-instruction">V1 (Minimal Instruction)<a class="headerlink" href="#v1-minimal-instruction" title="Permanent link">&para;</a></h3>
+<p>Write a product description for FitPulsePro Smartwatch</p>
+<h3 id="v2-basic-instruction">V2 (Basic Instruction)<a class="headerlink" href="#v2-basic-instruction" title="Permanent link">&para;</a></h3>
+<p>Write a product description for FitPulsePro smartwatch. Include key features like battery life and heart rate monitoring.</p>
+<h3 id="v3-detailed-instruction">V3 (Detailed Instruction)<a class="headerlink" href="#v3-detailed-instruction" title="Permanent link">&para;</a></h3>
+<p>Write a product description for FitPulsePro smartwatch using <strong>ONLY</strong> the details provided below. Do not add any features not listed. Make it relatable and understandable for professionals aged 25-40.</p>
+<p><strong>Required features to include:</strong>
+-   Heart rate monitoring with real-time tracking
+-   Built-in GPS for route mapping
+-   7-day battery life
+-   Water-resistant design</p>
+<p><strong>Constraints:</strong>
+-   <strong>Target Audience:</strong> Health-conscious professionals aged 25-40
+-   <strong>Tone:</strong> Professional yet approachable
+-   <strong>Word count:</strong> 100-150 words</p>
+<hr />
+<h2 id="output-versions">Output Versions<a class="headerlink" href="#output-versions" title="Permanent link">&para;</a></h2>
+<h3 id="v1-outputs-minimal-instruction">V1 Outputs (Minimal Instruction)<a class="headerlink" href="#v1-outputs-minimal-instruction" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Claude</strong></td>
+<td style="text-align: left;"><img src = "/img/V1_Claude.jpg" alt ="V1 Claude Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;"><img src = "/img/V1_ChatGPT.jpg" alt ="V1 ChatGPT Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;"><img src = "/img/V1_Gemini.jpg" alt ="V1 Gemini Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perplexity</strong></td>
+<td style="text-align: left;"><img src = "/img/V1_Perplexity.jpg" alt ="V1 Perplexity Output" width = "300"/></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">V1 Evaluation</th>
+<th style="text-align: left;">Clarity</th>
+<th style="text-align: left;">Accuracy</th>
+<th style="text-align: left;">Tone</th>
+<th style="text-align: left;">Creativity</th>
+<th style="text-align: left;">Structure</th>
+<th style="text-align: left;">Avg</th>
+<th style="text-align: left;">Compliance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Claude</strong></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3.2</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3.4</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3.2</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perplexity</strong></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4.0</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="v2-outputs-basic-instruction">V2 Outputs (Basic Instruction)<a class="headerlink" href="#v2-outputs-basic-instruction" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Claude</strong></td>
+<td style="text-align: left;"><img src = "/img/V2_Claude.jpg" alt ="V2 Claude Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;"><img src = "/img/V2_ChatGPT.jpg" alt ="V2 ChatGPT Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;"><img src = "/img/V2_Gemini.jpg" alt ="V2 Gemini Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perplexity</strong></td>
+<td style="text-align: left;"><img src = "/img/V2_Perplexity.jpg" alt ="V2 Perplexity Output" width = "300"/></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">V2 Evaluation</th>
+<th style="text-align: left;">Clarity</th>
+<th style="text-align: left;">Accuracy</th>
+<th style="text-align: left;">Tone</th>
+<th style="text-align: left;">Creativity</th>
+<th style="text-align: left;">Structure</th>
+<th style="text-align: left;">Avg</th>
+<th style="text-align: left;">Compliance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Claude</strong></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3.2</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4.0</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">2.6</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perplexity</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">3.8</td>
+<td style="text-align: left;">No extra features? N • Audience fit? Y</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="v3-outputs-detailed-instruction">V3 Outputs (Detailed Instruction)<a class="headerlink" href="#v3-outputs-detailed-instruction" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Claude</strong></td>
+<td style="text-align: left;"><img src = "/img/V3_Claude.jpg" alt ="V3 Claude Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;"><img src = "/img/V3_ChatGPT.jpg" alt ="V3 ChatGPT Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;"><img src = "/img/V3_Gemini.jpg" alt ="V3 Gemini Output" width = "300"/></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perplexity</strong></td>
+<td style="text-align: left;"><img src = "/img/V3_Perplexity.jpg" alt ="V3 Perplexity Output" width = "300"/></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">V3 Evaluation</th>
+<th style="text-align: left;">Clarity</th>
+<th style="text-align: left;">Accuracy</th>
+<th style="text-align: left;">Tone</th>
+<th style="text-align: left;">Creativity</th>
+<th style="text-align: left;">Structure</th>
+<th style="text-align: left;">Avg</th>
+<th style="text-align: left;">Compliance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Claude</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4.8</td>
+<td style="text-align: left;">No extra features? Y • 100–150 words? Y • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4.8</td>
+<td style="text-align: left;">No extra features? Y • 100–150 words? Y • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4.8</td>
+<td style="text-align: left;">No extra features? Y • 100–150 words? Y • Audience fit? Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perplexity</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">4.8</td>
+<td style="text-align: left;">No extra features? Y • 100–150 words? Y • Audience fit? Y</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="scoring-rubric-15">Scoring Rubric (1–5)<a class="headerlink" href="#scoring-rubric-15" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Score 5</th>
+<th style="text-align: left;">Score 3</th>
+<th style="text-align: left;">Score 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Clarity</strong></td>
+<td style="text-align: left;">Crystal clear and unambiguous.</td>
+<td style="text-align: left;">Understandable with minor ambiguity.</td>
+<td style="text-align: left;">Confusing or incomplete.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Accuracy</strong></td>
+<td style="text-align: left;">Fully correct and on-goal.</td>
+<td style="text-align: left;">Partially correct with small errors.</td>
+<td style="text-align: left;">Incorrect or off-target.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tone</strong></td>
+<td style="text-align: left;">Perfectly matched to context and audience.</td>
+<td style="text-align: left;">Acceptable but uneven.</td>
+<td style="text-align: left;">Inappropriate or mismatched.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Creativity</strong></td>
+<td style="text-align: left;">Original and compelling.</td>
+<td style="text-align: left;">Some novelty.</td>
+<td style="text-align: left;">Generic or stale.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Structure</strong></td>
+<td style="text-align: left;">Well organized with logical flow and helpful formatting.</td>
+<td style="text-align: left;">Some structure but minor issues.</td>
+<td style="text-align: left;">Disorganized or hard to scan.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="results-insights">Results &amp; Insights<a class="headerlink" href="#results-insights" title="Permanent link">&para;</a></h2>
+<h3 id="performance-by-prompt-version">📊 Performance by Prompt Version<a class="headerlink" href="#performance-by-prompt-version" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Prompt Type</th>
+<th style="text-align: left;">Clarity</th>
+<th style="text-align: left;">Accuracy</th>
+<th style="text-align: left;">Tone</th>
+<th style="text-align: left;">Creativity</th>
+<th style="text-align: left;">Structure</th>
+<th style="text-align: left;">Overall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>V1 (Minimal)</strong></td>
+<td style="text-align: left;">3.5</td>
+<td style="text-align: left;">2.0</td>
+<td style="text-align: left;">4.25</td>
+<td style="text-align: left;">3.25</td>
+<td style="text-align: left;">4.25</td>
+<td style="text-align: left;"><strong>3.4/5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>V2 (Basic)</strong></td>
+<td style="text-align: left;">4.0</td>
+<td style="text-align: left;">2.25</td>
+<td style="text-align: left;">3.75</td>
+<td style="text-align: left;">2.75</td>
+<td style="text-align: left;">4.25</td>
+<td style="text-align: left;"><strong>3.4/5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>V3 (Detailed)</strong></td>
+<td style="text-align: left;">5.0</td>
+<td style="text-align: left;">5.0</td>
+<td style="text-align: left;">5.0</td>
+<td style="text-align: left;">4.0</td>
+<td style="text-align: left;">5.0</td>
+<td style="text-align: left;"><strong>4.8/5</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>V1 → V3 Improvement: +41%</strong></p>
+</blockquote>
+<h3 id="key-findings">🔍 Key Findings<a class="headerlink" href="#key-findings" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Accuracy Is Everything</strong><ul>
+<li><strong>V1 &amp; V2:</strong> ALL models <strong>hallucinated</strong> features (2.0-2.25/5).</li>
+<li><strong>V3:</strong> PERFECT accuracy across all models (5.0/5).</li>
+<li>The phrase <strong>"Do not add any features not listed"</strong> eliminated 100% of hallucinations.</li>
+</ul>
+</li>
+<li><strong>The V2 Problem</strong><ul>
+<li>V2 actually performed <strong>worse</strong> than V1 in creativity (2.75 vs 3.25) and tone (3.75 vs 4.25). Partial specificity <strong>confused models</strong> more than complete freedom.</li>
+</ul>
+</li>
+<li><strong>V3 Achieved Near-Perfect Results</strong><ul>
+<li>Achieved <strong>5.0/5</strong> in Clarity, Accuracy, and Tone across the board.</li>
+<li>All models complied with word count and zero extra features were added.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="what-worked">✅ What Worked<a class="headerlink" href="#what-worked" title="Permanent link">&para;</a></h2>
+<p><strong>V3's Winning Formula:</strong>
+1.  <strong>Explicit negative instruction:</strong> "don't add extra details"
+2.  <strong>Specific feature list</strong> (4 items, bulleted)
+3.  <strong>Clear audience:</strong> "professionals aged 25-40"
+4.  <strong>Word count constraint:</strong> "100-150 words"
+5.  <strong>Context + constraints</strong> used together.</p>
+<p><strong>Result:</strong> Every model followed instructions perfectly, leading to a massive increase in quality.</p>
+<hr />
+<h2 id="what-didnt-work">❌ What Didn't Work<a class="headerlink" href="#what-didnt-work" title="Permanent link">&para;</a></h2>
+<p><strong>V1 Problems:</strong>
+-   Vague prompts = 100% feature hallucination.
+-   Every model added 5-10+ unauthorized features.
+-   Accuracy scored only 2.0/5.</p>
+<p><strong>V2 Problems (The "Half-Specific" Trap):</strong>
+-   Adding some info without full constraints led to the worst scores in Creativity and Tone.
+-   <strong>Lesson:</strong> Go fully specific (V3) or stay fully open (V1). The middle ground often fails.</p>
+<hr />
+<h2 id="unexpected-findings">💡 Unexpected Findings<a class="headerlink" href="#unexpected-findings" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>V3 wasn't less creative</strong>—it scored 4.0 vs V2's 2.75. Clear boundaries enabled <strong>strategic creativity</strong> and storytelling vs. generic feature lists.</li>
+<li><strong>Audience definition is magic</strong>—Simply adding "aged 25-40 professionals" jumped Tone from 3.75 → 5.0, a small change with a massive impact.</li>
+</ol>
+<hr />
+<h2 id="next-iteration-ideas">🚀 Next Iteration Ideas<a class="headerlink" href="#next-iteration-ideas" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Test V4:</strong> Remove "don't add extras" from V3 to isolate its impact.</li>
+<li><strong>Vary word counts:</strong> 50-75 words vs 150-200 words vs unlimited.</li>
+<li><strong>Test instruction order:</strong> Constraints-first vs context-first.</li>
+<li><strong>A/B test audience specificity:</strong> How detailed must the audience be?</li>
+<li><strong>Try different constraint types:</strong> Format, style, and length variations.</li>
+</ol>
+<hr />
+<h2 id="key-takeaways">🎓 Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Detailed prompts outperform vague prompts by 41%.</strong></li>
+<li><strong>Explicit boundaries eliminate hallucination</strong> (2.0 → 5.0 accuracy).</li>
+<li><strong>Partial specificity hurts more than it helps.</strong></li>
+<li><strong>Creativity thrives within clear boundaries</strong>, not despite them.</li>
+</ul>
+<hr />
+<h3 id="conclusion"><strong>Conclusion:</strong><a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
+<p>Prompt specificity directly determines output quality. Detailed instructions with explicit constraints (V3) produced near-perfect results across all AI models tested.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link", "navigation.expand", "navigation.instant", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
