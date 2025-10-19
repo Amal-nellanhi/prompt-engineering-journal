@@ -64,10 +64,10 @@ Write a product description for FitPulsePro smartwatch using **ONLY** the detail
 
 | Model | Output |
 | :--- | :--- |
-| **Claude** | <img src = "/img/V1_Claude.jpg" alt ="V1 Claude Output" width = "300"/> |
-| **ChatGPT** | <img src = "/img/V1_ChatGPT.jpg" alt ="V1 ChatGPT Output" width = "300"/> |
-| **Gemini** | <img src = "/img/V1_Gemini.jpg" alt ="V1 Gemini Output" width = "300"/> |
-| **Perplexity** |<img src = "/img/V1_Perplexity.jpg" alt ="V1 Perplexity Output" width = "300"/> |
+| **Claude** | <img src = "img/V1_Claude.jpg" alt ="V1 Claude Output" width = "300"/> |
+| **ChatGPT** | <img src = "img/V1_ChatGPT.jpg" alt ="V1 ChatGPT Output" width = "300"/> |
+| **Gemini** | <img src = "img/V1_Gemini.jpg" alt ="V1 Gemini Output" width = "300"/> |
+| **Perplexity** |<img src = "img/V1_Perplexity.jpg" alt ="V1 Perplexity Output" width = "300"/> |
 
 | V1 Evaluation | Clarity | Accuracy | Tone | Creativity | Structure | Avg | Compliance |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -82,10 +82,10 @@ Write a product description for FitPulsePro smartwatch using **ONLY** the detail
 
 | Model | Output |
 | :--- | :--- |
-| **Claude** | <img src = "/img/V2_Claude.jpg" alt ="V2 Claude Output" width = "300"/> |
-| **ChatGPT** | <img src = "/img/V2_ChatGPT.jpg" alt ="V2 ChatGPT Output" width = "300"/> |
-| **Gemini** | <img src = "/img/V2_Gemini.jpg" alt ="V2 Gemini Output" width = "300"/> |
-| **Perplexity** | <img src = "/img/V2_Perplexity.jpg" alt ="V2 Perplexity Output" width = "300"/> |
+| **Claude** | <img src = "img/V2_Claude.jpg" alt ="V2 Claude Output" width = "300"/> |
+| **ChatGPT** | <img src = "img/V2_ChatGPT.jpg" alt ="V2 ChatGPT Output" width = "300"/> |
+| **Gemini** | <img src = "img/V2_Gemini.jpg" alt ="V2 Gemini Output" width = "300"/> |
+| **Perplexity** | <img src = "img/V2_Perplexity.jpg" alt ="V2 Perplexity Output" width = "300"/> |
 
 | V2 Evaluation | Clarity | Accuracy | Tone | Creativity | Structure | Avg | Compliance |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -100,10 +100,10 @@ Write a product description for FitPulsePro smartwatch using **ONLY** the detail
 
 | Model | Output |
 | :--- | :--- |
-| **Claude** | <img src = "/img/V3_Claude.jpg" alt ="V3 Claude Output" width = "300"/> |
-| **ChatGPT** | <img src = "/img/V3_ChatGPT.jpg" alt ="V3 ChatGPT Output" width = "300"/> |
-| **Gemini** | <img src = "/img/V3_Gemini.jpg" alt ="V3 Gemini Output" width = "300"/>  |
-| **Perplexity** | <img src = "/img/V3_Perplexity.jpg" alt ="V3 Perplexity Output" width = "300"/>  |
+| **Claude** | <img src = "img/V3_Claude.jpg" alt ="V3 Claude Output" width = "300"/> |
+| **ChatGPT** | <img src = "img/V3_ChatGPT.jpg" alt ="V3 ChatGPT Output" width = "300"/> |
+| **Gemini** | <img src = "img/V3_Gemini.jpg" alt ="V3 Gemini Output" width = "300"/>  |
+| **Perplexity** | <img src = "img/V3_Perplexity.jpg" alt ="V3 Perplexity Output" width = "300"/>  |
 
 | V3 Evaluation | Clarity | Accuracy | Tone | Creativity | Structure | Avg | Compliance |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
