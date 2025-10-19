@@ -1,0 +1,37 @@
+
+site_name: Prompt Engineering Lab Journal
+site_author: Amal N K
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc: 
+        permalink: true
+        separator: "-"
+        toc_depth: 3
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+  features:
+    - content.tabs.link
+    - navigation.expand
+    - navigation.instant
+    - toc.follow
+    
+
+nav:
+  - Objective & Structure: 'index.md'
+  - Projects:
+    - 'P1: Instruction Prompts': 'project-1.md'
+    - 'P2: Role-based Prompts': 'project-2.md'
+    - 'P3: Zero-shot vs Few-shot': 'project-3.md'
+    - 'P4: Chain-of-Thought Prompts': 'project-4.md'
+    - 'P5: Context Length & Clarity': 'project-5.md'
+    - 'P6: Tone & Persona Control': 'project-6.md'
+    - 'P7: Creative Task Prompts': 'project-7.md'
+    - 'P8: Comparative Prompt Evaluation': 'project-8.md'
+    - 'P9: Text to Image Techniques': 'project-9.md'
+  - Evaluation Criteria: 'evaluation-criteria.md'
