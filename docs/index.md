@@ -39,3 +39,12 @@ This lab journal contains 9 projects. Each project will include:
 | **Tone** | Whether the response tone matches the context or purpose. |
 | **Creativity** | Level of originality or uniqueness in the response. |
 | **Structure** | How well-organized and formatted the output is. |
+
+---
+## ⚖️ Project Disclaimers and Notes
+
+### Evaluation Methodology
+The scores (Clarity, Accuracy, Tone, etc.) found throughout this journal represent **subjective human evaluation** against objective criteria. They are not generated or assigned by any of the AI tools tested.
+
+### Coincidence Note
+All tasks, product names, and content generated are entirely fictional and for educational purposes only. Any resemblance to real-world entities is purely coincidental.
