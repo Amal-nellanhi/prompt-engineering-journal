@@ -172,10 +172,10 @@ The chart below compares the overall average score (out of 5.0) for each prompt 
 ## ✅ What Worked
 
 **V3's Winning Formula:**
-1.  **Explicit negative instruction:** "don't add extra details"
-2.  **Specific feature list** (4 items, bulleted)
-3.  **Clear audience:** "professionals aged 25-40"
-4.  **Word count constraint:** "100-150 words"
+1.  **Explicit negative instruction:** "don't add extra details".
+2.  **Specific feature list** (4 items, bulleted).
+3.  **Clear audience:** "professionals aged 25-40".
+4.  **Word count constraint:** "100-150 words".
 5.  **Context + constraints** used together.
 
 **Result:** Every model followed instructions perfectly, leading to a massive increase in quality.
