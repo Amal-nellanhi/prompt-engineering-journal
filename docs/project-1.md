@@ -1,12 +1,12 @@
 # Project 1 – Instruction Prompts
 
-### Prompt Type & Goal
+### 📓 Prompt Type & Goal
 
 Testing **specificity levels** in direct instruction prompts—comparing how vague, basic, and detailed instructions affect the quality, accuracy, and creativity of AI-generated outputs.
 
 ---
 
-## Experiment Setup
+## 🧪 Experiment Setup
 
 ### Models and Versions
 -   Claude Sonnet 4.5
@@ -34,7 +34,7 @@ More specific instructions will produce higher scores in Structure and Accuracy 
 
 ---
 
-## Prompt Versions
+## 📂 Prompt Versions
 
 ### V1 (Minimal Instruction)
 Write a product description for FitPulsePro Smartwatch
