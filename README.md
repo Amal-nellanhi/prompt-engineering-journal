@@ -10,7 +10,7 @@ This journal serves as a personal laboratory to meticulously design, test, and e
 
 ## 🔗 Live Documentation Site
 
-The full, interactive documentation, including all project findings, data visualizations, and scoring rubrics, is hosted live via GitHub Pages:
+The full documentation, including all project findings, data visualizations, and scoring rubrics, is hosted live via GitHub Pages:
 
 ➡️ **[VIEW THE LIVE JOURNAL HERE](https://Amal-nellanhi.github.io/prompt-engineering-journal/)**
 
