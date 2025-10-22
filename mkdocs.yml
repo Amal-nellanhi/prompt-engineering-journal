@@ -27,6 +27,7 @@ theme:
 
 nav:
   - Objective & Structure: 'index.md'
+  - About the Researcher: 'researcher.md'
   - Projects:
     - 'P1: Instruction Prompts': 'project-1.md'
     - 'P2: Role-based Prompts': 'project-2.md'
