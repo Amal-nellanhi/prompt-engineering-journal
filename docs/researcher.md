@@ -1,4 +1,4 @@
-## About the Researcher
+
 
 | Field | Detail |
 | :--- | :--- |
