@@ -1,6 +1,6 @@
 # Project 1 – Instruction Prompts
 
-### 📓 Prompt Type & Goal
+## 🎯 Prompt Type & Goal
 
 Testing **specificity levels** in direct instruction prompts—comparing how vague, basic, and detailed instructions affect the quality, accuracy, and creativity of AI-generated outputs.
 
