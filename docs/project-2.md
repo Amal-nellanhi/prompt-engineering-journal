@@ -36,61 +36,61 @@ Role assignment will dramatically shift tone, focus, and vocabulary. Critics wil
 ## 📂 Prompt Versions
 ### V1: No Role (Baseline)
 Write a restaurant review for Bella Notte, an upscale Italian restaurant.
-- Details:Cuisine: Upscale Italian
-- Price: $$$ (expensive)
-- Ambiance: Romantic, dim lighting, live piano
-- Service: Attentive but slow
-- Food Quality: Excellent pasta, overcooked steak
-- Wine List: Extensive
-- Word count: 150-200 words
+-   Details:Cuisine: Upscale Italian
+-   Price: $$$ (expensive)
+-   Ambiance: Romantic, dim lighting, live piano
+-   Service: Attentive but slow
+-   Food Quality: Excellent pasta, overcooked steak
+-   Wine List: Extensive
+-   Word count: 150-200 words
 ---
 
 ### V2: Gordon Ramsay (Brutal Critic)
 You are Gordon Ramsay, the world-famous chef known for brutal honesty and high standards. Write a restaurant review for Bella Notte.
-- Details:Cuisine: Upscale Italian
-- Price: $$$ (expensive)
-- Ambiance: Romantic, dim lighting, live piano
-- Service: Attentive but slow
-- Food Quality: Excellent pasta, overcooked steak
-- Wine List: Extensive
-- Write in Gordon Ramsay's signature direct, passionate, and unfiltered style. 
-- Word count: 150-200 words
+-   Details:Cuisine: Upscale Italian
+-   Price: $$$ (expensive)
+-   Ambiance: Romantic, dim lighting, live piano
+-   Service: Attentive but slow
+-   Food Quality: Excellent pasta, overcooked steak
+-   Wine List: Extensive
+-   Write in Gordon Ramsay's signature direct, passionate, and unfiltered style. 
+-   Word count: 150-200 words
 ---
 
 ### V3: Enthusiastic Food Blogger
 You are a food blogger who absolutely LOVES everything and finds positives in every dining experience. You use lots of exclamation marks and enthusiastic language. Write a restaurant review for Bella Notte.
-- Details:Cuisine: Upscale Italian
-- Price: $$$ (expensive)
-- Ambiance: Romantic, dim lighting, live piano
-- Service: Attentive but slow
-- Food Quality: Excellent pasta, overcooked steak
-- Wine List: Extensive
-- Write in your signature upbeat, positive, and energetic style. 
-- Word count: 150-200 words
+-   Details:Cuisine: Upscale Italian
+-   Price: $$$ (expensive)
+-   Ambiance: Romantic, dim lighting, live piano
+-   Service: Attentive but slow
+-   Food Quality: Excellent pasta, overcooked steak
+-   Wine List: Extensive
+-   Write in your signature upbeat, positive, and energetic style. 
+-   Word count: 150-200 words
 ---
 
 ### V4: Michelin Inspector (Refined Analyst)
 You are a Michelin Guide inspector known for refined taste, attention to detail, and sophisticated analysis. Write a restaurant review for Bella Notte.
-- Details:Cuisine: Upscale Italian
-- Price: $$$ (expensive)
-- Ambiance: Romantic, dim lighting, live piano
-- Service: Attentive but slow
-- Food Quality: Excellent pasta, overcooked steak
-- Wine List: Extensive
-- Write in the formal, detailed, and analytical style of a Michelin inspector. 
-- Word count: 150-200 words
+-   Details:Cuisine: Upscale Italian
+-   Price: $$$ (expensive)
+-   Ambiance: Romantic, dim lighting, live piano
+-   Service: Attentive but slow
+-   Food Quality: Excellent pasta, overcooked steak
+-   Wine List: Extensive
+-   Write in the formal, detailed, and analytical style of a Michelin inspector. 
+-   Word count: 150-200 words
 ---
 
 ### V5: Budget-Conscious College Student
 You are a college student on a tight budget who rarely eats at expensive restaurants. Write a restaurant review for Bella Notte from your perspective.
-- Details:Cuisine: Upscale Italian
-- Price: $$$ (expensive)
-- Ambiance: Romantic, dim lighting, live piano
-- Service: Attentive but slow
-- Food Quality: Excellent pasta, overcooked steak
-- Wine List: Extensive
-- Focus on value, affordability concerns, and whether it's worth the splurge.
-- Word count: 150-200 words
+-   Details:Cuisine: Upscale Italian
+-   Price: $$$ (expensive)
+-   Ambiance: Romantic, dim lighting, live piano
+-   Service: Attentive but slow
+-   Food Quality: Excellent pasta, overcooked steak
+-   Wine List: Extensive
+-   Focus on value, affordability concerns, and whether it's worth the splurge.
+-   Word count: 150-200 words
 ---
 
 ## Output Versions
@@ -102,7 +102,8 @@ You are a college student on a tight budget who rarely eats at expensive restaur
 | **V3** | <img src = "img/p2-v3.jpg" alt ="V3 Output" width = "300"/> |
 | **V4** |<img src = "img/p2-v4.jpg" alt ="V4  Output" width = "300"/> |
 | **V5** |<img src = "img/p2-v5.jpg" alt ="V5  Output" width = "300"/> |
-### Evaluation
+
+## Evaluation
 | Version | Clarity | Accuracy | Tone | Creativity | Structure | Role Adherence | Average  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **V1** | 4 | 2 | 4 | 3 | 4 | 3 |3.30 |
