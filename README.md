@@ -1,12 +1,12 @@
 # 🔬 Prompt Engineering Lab Journal
 
-### A Systematic, 9-Part Study on Generative AI Instruction Effectiveness
+### A Systematic, 5-Part Study on Generative AI Instruction Effectiveness
 
 ---
 
 ## 🎯 Project Objective
 
-This journal serves as a personal laboratory to meticulously design, test, and evaluate various prompt structures (Chain-of-Thought, Role-based, Zero-shot vs. Few-shot, etc.) to understand how specific variables—such as clarity, tone, and constraints—directly impact the quality, accuracy, and creativity of outputs from leading AI models.
+This journal serves as a personal laboratory to meticulously design, test, and evaluate various prompt structures (Chain-of-Thought, Role-based, etc.) to understand how specific variables—such as clarity, tone, and constraints—directly impact the quality, accuracy, and creativity of outputs from leading AI models.
 
 ## 🔗 Live Documentation Site
 
