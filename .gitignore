@@ -1,0 +1,13 @@
+# MkDocs build directory
+site/
+
+# Environment files
+.env
+venv/
+
+# VS Code directory (optional)
+.vscode/
+
+# Compiled Python files
+__pycache__
+*.pyc
