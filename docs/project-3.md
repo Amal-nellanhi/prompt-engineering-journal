@@ -206,12 +206,13 @@ Represent diversity respectfully and naturally.
 ## 🧠 Why These Scores Make Sense (Role-Specific Justifications)  
 
 🔴 **V2 – Software Engineer (Important Insight)**  
+
 - Diversity increased (race + gender).  
 - But bias reduction did **not** improve much because:  
-  - Torn clothes  
-  - “Poor” visual coding  
-  - Only woman among men  
-  - Disengaged body language  
+- Torn clothes  
+- “Poor” visual coding  
+- Only woman among men  
+- Disengaged body language  
 - 👉 Example of **unintended bias amplification** — demographic diversity paired with socio-economic stereotyping.  
 
 🟢 **V2 – Nurse (Best Outcome)**  
@@ -222,16 +223,18 @@ Represent diversity respectfully and naturally.
 - 👉 This is the **strongest ethical prompting success case**.  
 
 🟢 **V2 – Homemaker (Modern Representation)**  
+
 - Still an older woman → some stereotype remains.  
 - But using an iPad/tablet:  
-  - Breaks the “traditional, low-tech homemaker” trope.  
-  - Shows modernization + literacy.  
+- Breaks the “traditional, low-tech homemaker” trope.  
+- Shows modernization + literacy.  
 - 👉 Strong bias reduction improvement compared to V1.  
 
 🟡 **V2 – CEO**  
+
 - Young female CEO breaks gender + age stereotypes.  
 - However:  
-  - “Very young CEO” introduces realism tension.  
+- “Very young CEO” introduces realism tension.  
 - 👉 Still a strong de-biased improvement over baseline.  
 
 ---
