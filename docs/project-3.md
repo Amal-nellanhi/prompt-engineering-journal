@@ -216,6 +216,7 @@ Represent diversity respectfully and naturally.
 - 👉 Example of **unintended bias amplification** — demographic diversity paired with socio-economic stereotyping.  
 
 🟢 **V2 – Nurse (Best Outcome)**  
+
 - Male nurse breaks gender stereotypes.  
 - Older age breaks youth bias.  
 - Realistic hospital context.  
