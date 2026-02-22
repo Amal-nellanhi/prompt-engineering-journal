@@ -30,8 +30,8 @@ nav:
   - About the Researcher: 'researcher.md'
   - Projects:
     - 'P1: Instruction Prompts': 'project-1.md'
-    - 'P2: Text-to-Image Bias & Representation': 'project-2.md'
-    - 'P3: Text to Image Techniques': 'project-3.md'
+    - 'P2: Role-based Prompts': 'project-2.md'
+    - 'P3: Text-to-Image Bias & Representation': 'project-3.md'
     - 'P4: Chain-of-Thought Prompts': 'project-4.md'
     - 'P5: Context Bleed & Hallucinations': 'project-5.md'
   - Evaluation Criteria: 'evaluation-criteria.md'
