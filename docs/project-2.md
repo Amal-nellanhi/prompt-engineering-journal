@@ -1,4 +1,4 @@
-# Project 2 – Role-based Promptsgi
+# Project 2 – Role-based Prompts
 
 ## 🎯 Prompt Type & Goal
 
