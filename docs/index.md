@@ -1,6 +1,6 @@
 # **Prompt Engineering Lab Journal**
 
-A personal workspace to document 9 projects testing prompt effectiveness.
+A personal workspace to document 5 projects testing prompt effectiveness.
 
 ## 🧠 Objective
 
@@ -10,7 +10,7 @@ To design, test, and evaluate various prompt types to understand how **clarity, 
 
 ## 📂 Structure
 
-This lab journal contains 9 projects. Each project will include:
+This lab journal contains 5 projects. Each project will include:
 
 1.  **Prompt Type & Goal** – what kind of prompt is tested and why.
 2.  **Experiment Setup** – tools, parameters, and method used.
